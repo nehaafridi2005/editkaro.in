@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 body: JSON.stringify({ email: email })
             })
-            .then(response => response.json())
+            .then(response => index.json())
             .then(data => {
                 if (data.status === 'success') {
                     alert('Thank you for subscribing!');
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 body: JSON.stringify({ name, email, phone, message })
             })
-            .then(response => response.json())
+            .then(response => index.json())
             .then(data => {
                 if (data.status === 'success') {
                     alert('Your message has been sent!');
